@@ -11,3 +11,6 @@ type Name = String
 
 isMember :: Name -> [Name] -> Bool
 isMember = elem 
+
+type Ls a = [a]
+-- We can also use type variables in type synonym expressions
