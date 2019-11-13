@@ -34,20 +34,6 @@ class Enum a where
         | fromEnum start < fromEnum end = start:enumFromTo (succ start) end
         | otherwise = []
 
-{-
-class Num a where
-    #MINIMAL (+), (*), abs, signum, fromInteger, ((-) | negate)#
+-- Use hoogle to look up more typeclasses
 
-    (+) :: a -> a -> a
-    (*) :: a -> a -> a
-    abs :: a -> a
-    signum :: a -> a
-    fromInteger :: Integer -> a
-
-    (-) :: a -> a -> a
-    a - b = a + negate b
-
-    negate :: a -> a
-    negate a = (fromInteger 0) - a 
-    
-    Use hoogle to lookup more classes-}
+-- We can define instances of typeclasses, but more on how to do that later

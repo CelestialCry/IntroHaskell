@@ -31,4 +31,3 @@ fibs :: [Integer]
 fibs = 0:1:zipWith (+) fibs fibo
     where fibo = drop 1 fibs
 -- Here it is important to use Integer, as Int is very small and fibs grow very fast
-

@@ -20,3 +20,10 @@ multiplyTogether :: Double -> Double -> Double
 multiplyTogether x y = x*y
 
 -- See if you understand what these functions are
+
+infixl 4 +<+
+(+<+) :: [a] -> [a] -> [a]
+as +<+ bs = bs ++ as
+-- Definied an infix operator as
+
+-- Also have infixr and infix
